@@ -1,0 +1,24 @@
+{
+  "name": "nexus-server",
+  "private": true,
+  "description": "Simple remote file storage server over HTTP",
+  "version": "0.0.1-alpha",
+  "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
+  "license": "MIT",
+  "keywords": [
+    "storage",
+    "file",
+    "remote",
+    "streams"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichielvdVelde/nexus-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MichielvdVelde/nexus-server/issues"
+  },
+  "dependencies": {
+    "debug": "^2.6.3"
+  }
+}
