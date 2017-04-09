@@ -3,7 +3,7 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 Nexus is simple remote file storage server over HTTP. Easily create, read and update
-files remotely, using only HTTP. With an easy to use HTTP API and [node.js client](http://github.com/MichielvdVelde/nexus-client),
+files remotely, using only HTTP. With an easy to use HTTP API and [node.js client](http://github.com/MichielvdVelde/nexus-client-http),
 it's fast to set up and use.
 
 > Nexus is currently **an alpha version**. Use at your own risk.
