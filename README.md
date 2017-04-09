@@ -2,7 +2,7 @@
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-Nexus is simple remote file storage server over HTTP. Easily create, read and update
+Nexus is a simple remote file storage server over HTTP. Easily create, read and update
 files remotely, using only HTTP. With an easy to use HTTP API and [node.js client](http://github.com/MichielvdVelde/nexus-client-http),
 it's fast to set up and use.
 
@@ -17,8 +17,8 @@ time take a look at the source code if you're interested.
 * Support for **read** (r), **write** (w) and **append** (a) modes (may depend on the store used)
 * Resource paths are like directory paths, but starting with a single forward slash (`/`)
   * Extensions are optional, but a resource will **always** be a file
-  * E.g. `/resource`, `resource.json`, `dir/subdir/another/resource`
-* Abstracts file handling, making it possible to use multiple stores
+  * E.g. `/resource`, `/resource.json`, `/dir/subdir/another/resource`
+* Abstracts file handling, making it possible to use multiple types of stores
 
 ## Roadmap
 
@@ -51,7 +51,7 @@ For an example, see [FileStore.js](./lib/FileStore.js).
 
 ## Setting up a server
 
-A few lines of code says more than a thousand words.
+A few lines of code say more than a thousand words.
 
 ```js
 const path = require('path')
