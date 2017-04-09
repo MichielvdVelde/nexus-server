@@ -25,6 +25,7 @@ time take a look at the source code if you're interested.
 ## Roadmap
 
 * Support HTTPS
+* Support for authentication
 * Maybe look into making core functionality transport-independent
   * WebSocket support would make a nice addition
   * Vanilla TCP might be fun too
