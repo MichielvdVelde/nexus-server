@@ -50,14 +50,11 @@ A few lines of code says more than a thousand words.
 
 ```js
 const path = require('path')
+const Nexus = require('nexus-server')
 
-const Nexus = require('nexus')
-const Server = Nexus.Server
-const FileStore = Nexus.FileStore
-
-const server = new Server({
+const server = new Nexus.Server({
   // FileStore requires an absolute path!
-  store: new FileStore(path.resolve(process.cwd(), './resources'))
+  store: new Nexus.FileStore(path.resolve(process.cwd(), './resources'))
 })
 
 server.listen().then(() => {
