@@ -22,7 +22,14 @@ time take a look at the source code if you're interested.
 
 ## Roadmap
 
+**Soon**
+
 * Support HTTPS
+* Support partial content and `Range` headers
+* Use the path as the resource name (replacing `/download` and `/upload`), not a custom header
+
+**Longer**
+
 * Support for authentication
 * Maybe look into making core functionality transport-independent
   * WebSocket support would make a nice addition
