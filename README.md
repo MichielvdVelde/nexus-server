@@ -8,6 +8,9 @@ it's fast to set up and use.
 
 > Nexus is currently **an alpha version**. Use at your own risk.
 
+> **Important**: The version you see here MAY NOT be the one currently published
+> on npm! To check the latest published version, [look at the package on npm](https://www.npmjs.com/package/nexus-server).
+
 Documentation is sparse at the moment, I will write some more later. In the mean
 time take a look at the source code if you're interested.
 
