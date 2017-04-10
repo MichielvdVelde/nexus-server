@@ -13,18 +13,19 @@ time take a look at the source code if you're interested.
 
 ## Features
 
-* For reading, simply make a `GET` request to a resource
-* Support for **read** (r), **write** (w) and **append** (a) modes (may depend on the store used)
-* Resource paths are like directory paths, but starting with a single forward slash (`/`)
+* Simple to use HTTP API
+  * To download a file, simply make a request: `GET /my/resource.json`
+  * To upload a file, make another simple request: `PUT /my/resource.json` (`POST` works too)
+* The given path is the resource path
   * Extensions are optional, but a resource will **always** be a file
   * E.g. `/resource`, `/resource.json`, `/dir/subdir/another/resource`
+* Support for **read** (r), **write** (w) and **append** (a) modes (may depend on the store used)
 * Abstracts file handling, making it possible to use multiple types of stores
 
 ## Roadmap
 
 **Soon**
 
-* Support HTTPS
 * Support partial content and `Range` headers
 
 **Longer**
@@ -77,9 +78,26 @@ server.listen().then(() => {
 })
 ```
 
+### Enabling SSL
+
+By setting `options.secure` to `true` and providing the appropriate keys and/or
+certificates in the options object, HTTPS will be enabled and your connection
+will be secure.
+
+Note that Nexus uses `http.Server`, so all options that can be provided to
+`https.createServer([options])` will be valid for use.
+
+```js
+const client = new Client({
+  secure: true,
+  key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
+  cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+})
+```
+
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-### License
+## License
 
 Copyright 2017 [Michiel van der Velde](http://www.michielvdvelde.nl).
 
