@@ -91,7 +91,7 @@ Note that Nexus uses `http.Server`, so all options that can be provided to
 `https.createServer([options])` will be valid for use.
 
 ```js
-const client = new Client({
+const server = new Nexus.Server({
   secure: true,
   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
