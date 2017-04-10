@@ -13,7 +13,7 @@ time take a look at the source code if you're interested.
 
 ## Features
 
-* Provides two HTTP endpoints, `/download` and `/upload`
+* For reading, simply make a `GET` request to a resource
 * Support for **read** (r), **write** (w) and **append** (a) modes (may depend on the store used)
 * Resource paths are like directory paths, but starting with a single forward slash (`/`)
   * Extensions are optional, but a resource will **always** be a file
@@ -26,7 +26,6 @@ time take a look at the source code if you're interested.
 
 * Support HTTPS
 * Support partial content and `Range` headers
-* Use the path as the resource name (replacing `/download` and `/upload`), not a custom header
 
 **Longer**
 
